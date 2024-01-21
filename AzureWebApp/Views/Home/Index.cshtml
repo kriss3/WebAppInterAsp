@@ -6,13 +6,18 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
     <div>
-        <p>Site upgrade to .Net5</p>
-        <p>This is my new element pushed via Github Actions.</p>
+        <p>Site upgrade to .NET 8.0 </p>
+        <p>This is my new element pushed via GitHub Actions.</p>
     </div>
     <div>
-        <p>Here is my quote from Plato:</p>
+        <p onclick">Here is my quote from Plato:</p>
+        <button onclick="myAlert2('Kris')">Click Me</button>
         <blockquote cite="https://www.pinterest.ca/pin/441423200960535469">
             The highest form of knowledge is empathy, for it requires us to suspend our egos and live in another's world. It requires profound purpose larger than the self kind of understanding.
         </blockquote>
     </div>
 </div>
+
+@section scripts {
+    <script src ="~/js/myScript.js"></script>
+}
